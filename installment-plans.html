@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installment Plans | Evo Volt Hybrid</title>
+    <meta
+      name="description"
+      content="Evo Volt Hybrid price and 0% markup installment plans in Pakistan with a live monthly payment calculator."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Evo Volt home">
+        <span>Evo</span><strong>Volt</strong>
+      </a>
+      <nav class="nav-links" aria-label="Site sections">
+        <a href="prototype.html">Prototype</a>
+        <a href="features.html">Features</a>
+        <a href="installment-plans.html" aria-current="page">Plans</a>
+      </nav>
+      <button class="nav-action" type="button" data-open-booking>Book Test Ride</button>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="plans-page-title">
+        <div>
+          <p class="eyebrow">Launch offer</p>
+          <h1 id="plans-page-title">PKR 579,999 with 0% markup plans.</h1>
+          <p>
+            Choose a flexible installment period with no markup. Adjust the
+            down payment and duration to preview monthly payments instantly.
+          </p>
+        </div>
+      </section>
+
+      <section class="plans page-plans" aria-labelledby="plans-title">
+        <div class="plans-copy">
+          <p class="eyebrow">Payment calculator</p>
+          <h2 id="plans-title">Plan your Evo Volt purchase.</h2>
+          <p>
+            The balance is divided equally across your selected duration. The
+            estimate below keeps markup at 0% for every option.
+          </p>
+          <dl class="price-list">
+            <div>
+              <dt>Bike price</dt>
+              <dd>PKR 579,999</dd>
+            </div>
+            <div>
+              <dt>Markup</dt>
+              <dd>0%</dd>
+            </div>
+            <div>
+              <dt>Booking</dt>
+              <dd>Open now</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="calculator" aria-label="Installment calculator">
+          <div class="calculator-top">
+            <span>Estimated monthly payment</span>
+            <strong id="monthlyAmount">PKR 48,333</strong>
+          </div>
+          <label for="downPayment">Down payment</label>
+          <input
+            id="downPayment"
+            name="downPayment"
+            type="range"
+            min="0"
+            max="300000"
+            step="10000"
+            value="0"
+          />
+          <div class="range-row">
+            <span id="downPaymentValue">PKR 0</span>
+            <span>Max PKR 300,000</span>
+          </div>
+          <span class="control-label">Installment duration</span>
+          <div class="month-options" role="group" aria-label="Installment duration">
+            <button type="button" class="month-button" data-months="6">6 mo</button>
+            <button type="button" class="month-button active" data-months="12">12 mo</button>
+            <button type="button" class="month-button" data-months="18">18 mo</button>
+            <button type="button" class="month-button" data-months="24">24 mo</button>
+          </div>
+          <div class="calculator-note">
+            <strong id="remainingAmount">PKR 579,999</strong>
+            <span>remaining balance, divided equally at 0% markup.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="plan-card-grid" aria-label="Sample installment plans">
+        <article>
+          <span>Fast payoff</span>
+          <h2>6 months</h2>
+          <p>Higher monthly amount, shortest ownership path.</p>
+        </article>
+        <article>
+          <span>Balanced</span>
+          <h2>12 months</h2>
+          <p>Popular plan for customers who want a steady monthly payment.</p>
+        </article>
+        <article>
+          <span>Lower monthly</span>
+          <h2>24 months</h2>
+          <p>Spreads the 0% balance across the longest available duration.</p>
+        </article>
+      </section>
+
+      <section class="page-cta-band" aria-labelledby="plans-booking-title">
+        <div>
+          <p class="eyebrow">Need help choosing?</p>
+          <h2 id="plans-booking-title">Ask for a plan call back.</h2>
+        </div>
+        <button class="button primary" type="button" data-open-booking>Book Test Ride</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Evo Volt Hybrid</span>
+      <span>Ride the future. Power the change.</span>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
